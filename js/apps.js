@@ -43,26 +43,32 @@ var qus = [];
 
 
 var q1 =prompt("are you single");
-if (q1 == "") {
-   alert("rong input") 
-}
+
+while (q1 != 'yes'&& q1 != 'no') { q1=prompt ("are you single") }
+  
+   console.log(q1);
     qus.push(q1);
 
+
+
 var q2 = prompt("do you live alone ");
-if (q2 == "") {
-    alert("rong input") 
- }
+
+while (q2 != 'yes'&& q2 != 'no') { q2=prompt ("do you live alone ") }
+
+
+console.log(q2);
     qus.push(q2);
 
+
 var q3 = prompt("do live in jordan");
-if (q3 == "") {
-    alert("rong input") 
- }
+while (q3 != 'yes'&& q3 != 'no') { q3=prompt ("do live in jordan") }
+
+console.log(q3);
     qus.push(q3);
 
 console.log(qus)
  
-for (i = qus.length -1 ; i >= 0 ; i--) {
+for (let i = qus.length -1 ; i >= 0 ; i--) {
     console.log(qus[i]);
     
 }
